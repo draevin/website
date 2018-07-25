@@ -1,3 +1,3 @@
-# website
+# Personal Website
 
-Personal website
+My personal website for information, resume, etc. 
