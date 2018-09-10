@@ -16,7 +16,7 @@ body {
   line-height: 1.5;
   color: #191b1d;
   text-align: left;
-  background-color: #fdf9ee;
+  background-color: #fffdf6;
 }
 
 h1, h2, h3 ,h4, h5, h6 {
@@ -99,6 +99,11 @@ p {
   max-width: 90%;
 }
 
+.icon {
+  text-align: center;
+  font-size: 3rem;
+}
+
 img.circle {
   border-radius: 50%;
 }
@@ -116,6 +121,26 @@ img.center {
 .vert-fill {
   padding-top: 5vh;
   min-height: 100vh;
+}
+
+.vert-fill-3-4 {
+  padding-top: 5vh;
+  min-height: 75vh;
+}
+
+.vert-fill-half {
+  padding-top: 5vh;
+  min-height: 50vh;
+}
+
+.vert-fill-third {
+  padding-top: 5vh;
+  min-height: 33vh;
+}
+
+.vert-fill-fourth {
+  padding-top: 5vh;
+  min-height: 25vh;
 }
 
 /* Rotator */
