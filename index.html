@@ -20,7 +20,7 @@
     <!-- JS -->
     <script src="./js/bootstrap-4.1.3.min.js"></script>
     <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/main.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
 
   </head>
   <body>
@@ -44,16 +44,51 @@
           <img src="https://placeimg.com/700/700/tech" class="center circle">  
         </div>
       </div>
-      <div class="row down-button link-scroll">
-          <a href="#about">
-            <i class="fa fa-angle-double-down fadeIn fadeIn-Delay-0-5s fadeIn-1-5s teal"></i>
+      <div class="row down-button">
+          <a href="#about" class="link-scroll">
+            <i class="fa fa-angle-double-down fadeIn fadeIn-Delay-1s fadeIn-1s teal"></i>
           </a>
       </div>
-      <div id="about" class="row vert-fill justify-content-center">
+      <div id="about" class="row vert-fill-fourth justify-content-center">
         <div class="col-sm-8 col-md-6">
-          <p>I'm  a student, developer, and  artist in Olympia, Washington. I like simple design, clean code, and good coffee. I love connecting with people, especially to seek out new opportunities, develop my skills, and help others!</p>    
+          <h3>Under Construction...</h3>
+          <p>
+            I've still got a lot of love to put into the new version of my site! In the meantime, feel free to get in touch at any of the links below!
+          </p>    
         </div>
       </div>
+      <div id="contact" class="row justify-content-center vert-fill-3-4">
+        <div class="icon col-3 col-sm-2">
+          <a href="https://twitter.com/draevinluke" class="teal"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="icon col-3 col-sm-2">
+          <a href="mailto:draevinl@gmail.com?subject=Let's get started!" class="teal"><i class="fa fa-envelope"></i></a>
+        </div>
+        <div class="icon col-3 col-sm-2">
+          <a href="https://github.com/draevin" class="teal"><i class="fa fa-github"></i></a>
+        </div>
+        <!-- <div class="icon col-3 col-sm-2">
+          <a href="https://gitlab.com/draevin" class="teal"><i class="fa fa-gitlab"></i></a>
+        </div> -->
+      </div>
     </div>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#top'], a.link-scroll").on('click', function (event) {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            // Store hash
+            var hash = this.hash;
+            // Using jQuery's animate() method to add smooth page scroll
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1200, function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+          });            
+        }(jQuery));
+    </script>
   </body>
 </html>
