@@ -149,11 +149,12 @@ p {
 }
 
 .slick-prev:before {
-  margin-left: 8px;
+  margin-left: 0.8em;
 }
 
 .slick-next:before {
-  margin-right: 8px;
+  margin-left: -0.8em;
+  margin-right: 0.8em;
 }
 .card-col {
   background-color: #fffefb;
