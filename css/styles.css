@@ -1,16 +1,15 @@
 /* Base */
 
 html {
-  font-family: sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   line-height: 1.2;
-  -webkit-text-size-adjust: 100%;/* Style the buttons that are used to open and close the accordion panel */
+  -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -89,26 +88,52 @@ p {
 
 /* Customize */
 
-.accordion {
+.accordion-btn {
   color: #191b1d;
-  background-color: hsl(45, 80%, 97%);
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #fdfaf1;
   cursor: pointer;
   padding: 18px;
   text-align: left;
-  border: none;
+  border: 1px solid #66666622;
+  border-bottom: none;
   outline: none;
   transition: 0.4s;
   width: 100%;
 }
-.active, .accordion:hover {
+
+.accordion .accordion-btn:first-of-type {
+  border-radius: 1em 1em 0 0;
+}
+
+.accordion .accordion-btn:last-of-type {
+  border-radius: 0 0 1em 1em;
+  border-bottom: 1px solid #66666622;
+}
+
+.active, .accordion-btn:hover {
   background-color: #66666622;
 }
 
 .panel {
   padding: 0 18px;
   max-height: 0;
+  border-left: 1px solid #66666622;
+  border-right: 1px solid #66666622;
+  border-top: none;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.accordion .panel:last-of-type {
+  border-radius: 0 0 1em 1em;
+  border-bottom: none;
+}
+
+.card-carousel {
+  padding: 0;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .card-col {
@@ -436,6 +461,34 @@ img.center {
   .hello-rw h5:nth-child(odd) {
     text-indent: .2rem;
   }
+
+  h1 {
+    font-size: 2.66rem;
+  }
+  
+  h2 {
+    font-size: 2.33rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  h4 {
+    font-size: 1.66rem;
+  }
+  
+  h5 {
+    font-size: 1.33rem;
+  }
+  
+  h6 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (min-width: 992px){
@@ -445,5 +498,9 @@ img.center {
 
   .hello-rw h2 {
     top: 2rem;
+  }
+
+  body {
+    font-size: 1rem;
   }
 }
