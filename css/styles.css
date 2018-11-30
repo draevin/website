@@ -85,6 +85,10 @@ p {
   color: #fffefb;
 }
 
+.thin-whitish {
+  color: #fffefba2;
+}
+
 
 /* Customize */
 
@@ -136,6 +140,21 @@ p {
   margin-right: 0.5rem;
 }
 
+.slide {
+  margin-bottom: 2em;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #fdfaf1a2;
+}
+
+.slick-prev:before {
+  margin-left: 8px;
+}
+
+.slick-next:before {
+  margin-right: 8px;
+}
 .card-col {
   background-color: #fffefb;
   border-radius: 1.2em;
@@ -174,6 +193,7 @@ p {
 .hello-img img {
   max-height: 38vh;
   max-width: 80%;
+  filter: grayscale(100%)
 }
 
 .icon {
