@@ -56,6 +56,14 @@ h6 {
   font-size: 1.33rem;
 }
 
+hr {
+  margin: 1.2em 1em;
+  width: 12em;
+  text-align: left;
+  border-width: 0px;
+  border-top: .5em dotted #155f5f;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;

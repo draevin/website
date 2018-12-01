@@ -51,6 +51,9 @@ $(document).ready(function () {
         var $datesText = $(document.createTextNode(exp.start + " - " + exp.end));
         $slide.append($dates.append($datesText));
 
+        var $rule = $(document.createElement("hr"));
+        $slide.append($rule);
+
         var $desc = $(document.createElement("p"));
         var $descText = $(document.createTextNode(exp.description));
         $slide.append($desc.append($descText));
