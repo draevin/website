@@ -37,7 +37,7 @@ $(document).ready(function () {
           var $projItemText = $(document.createTextNode(proj));
           $projList.append($projItem.append($projItemText));
         });
-        $projAccordion.append($projAccordionBtn.append($projPanel.append($projList)));
+        $slide.append($projAccordion.append($projAccordionBtn.append($projPanel.append($projList))));
 
         $("#experience").append($slide);
       });
