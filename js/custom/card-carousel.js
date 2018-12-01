@@ -3,8 +3,10 @@ $(document).ready(function () {
   $.getJSON($exp)
     .done(function (data) {
       $.each(data.exps, function (i, exp) {
-        var $slide = $(document.createElement("div")).attr("id", exp.name);
-        $slide.classList.add("slide", "purple-dark", "vert-center-col", "card-col", "shadow-def");
+        var $slide = $(document.createElement("div")).attr({
+          id: exp.name,
+          class: "slide purple-dark vert-center-col card-col shadow-def"
+        });
         var $title = $(document.createElement("h4"));
         var $titleText = $(document.createTextNode(exp.title));
         $title.appendChild($titleText);
