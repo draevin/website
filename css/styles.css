@@ -62,6 +62,14 @@ p {
   line-height: 1.6rem;
 }
 
+ul {
+  list-style-type: disc;
+}
+
+li {
+  margin-bottom: .4em;
+}
+
 
 /* Colors */
 
@@ -127,14 +135,6 @@ p {
   border-top: none;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-}
-
-.panel > ul {
-  list-style-type: disc;
-}
-
-.panel > ul > li {
-  margin-bottom: .4em;
 }
 
 .accordion .panel:last-of-type {
