@@ -65,7 +65,7 @@ hr {
 }
 
 hr.mini {
-  margin: 1em 0.8em;
+  margin: 0.8em 0.8em;
   width: 5em;
   border-top: 0.3em dotted #155f5f;
 }
