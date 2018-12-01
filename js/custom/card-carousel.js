@@ -68,6 +68,19 @@ $(document).ready(function () {
         $projAccordion.append($projAccordionBtn.append($projAccordionBtnText));
         $slide.append($projAccordion.append($projPanel.append($projList)))
 
+        var $techAccordion = $(document.createElement("div")).attr("class", "accordion");
+        var $techAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn");
+        var $techAccordionBtnText = $(document.createTextNode("Primary Technologies"));
+        var $techPanel = $(document.createElement("div")).attr("class", "panel");
+        var $techList = $(document.createElement("ul"));
+        $.each(exp.techs, function (i, tech) {
+          var $techItem = $(document.createElement("li"));
+          var $techItemText = $(document.createTextNode(tech));
+          $techList.append($techItem.append($techItemText));
+        });
+        $techAccordion.append($techAccordionBtn.append($techAccordionBtnText));
+        $slide.append($techAccordion.append($techPanel.append($techList)))
+
         $("#experience").append($slide);
       });
       startCarousel();
