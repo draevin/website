@@ -1,36 +1,38 @@
-[
-  {
-    "name": "dshs",
-    "title": "Washington Dept. of Social and Health Services",
-    "start": "June 2017",
-    "end": "Present",
-    "description": "My primary responsibilities at this job upon hiring were directly related to the development and maintenance of features within the Automatic Client Tracker (ACT), an application used state-wide by field staff in the Juvenile Rehabilitation system. The app allows staff to manage the youth's background information, case paperwork, and treatment needs and progress, as well as information and timely reminders for the staff related to their responsibilities within the system. Due to our small team size, my responsibilities also included test development, requirements gathering, and more.",
-    "projects": [
-      "Optimizing TFS builds (60% reduction in CI build times)",
-      "Converting static folders of dependency binaries into packages on a new internal NuGet feed",
-      "Leverage DbUp alongside our schema source control for tracking production data fixes",
-      "Implementing an internal wiki for developer documentation and reworking existing ad-hoc folders of docs into the wiki"
-    ],
-    "techs": [
-      "C#",
-      "SQL"
-    ]
-  },
-  {
-    "name": "ziemek",
-    "title": "Ziemek Dental Laboratories",
-    "start": "July 2018",
-    "end": "Present",
-    "description": "As a business that works closely with dentists and their patients to provide quality dental solutions, the teams at Ziemek Dental Labs use an expansive arsenal of CAD/CAM technology alongside digital light processing printers in an increasingly digital manufacturing environment. I have been working with their administrative team to improve their workflows and help manage the systems that they use on a daily basis.",
-    "projects": [
-      "Development of a regulation-compliant AWS S3 data archival and management solution for patient order files",
-      "Creation of internal tools for automation of administrative tasks",
-      "Desktop support for workstation, scanning, and printing hardware"
-    ],
-    "techs": [
-      "Amazon Web Services (S3)",
-      "PowerShell",
-      "Go"
-    ]
-  }
-]
+{
+  "exps": [
+    {
+      "name": "dshs",
+      "title": "Washington Dept. of Social and Health Services",
+      "start": "June 2017",
+      "end": "Present",
+      "description": "My primary responsibilities at this job upon hiring were directly related to the development and maintenance of features within the Automatic Client Tracker (ACT), an application used state-wide by field staff in the Juvenile Rehabilitation system. The app allows staff to manage the youth's background information, case paperwork, and treatment needs and progress, as well as information and timely reminders for the staff related to their responsibilities within the system. Due to our small team size, my responsibilities also included test development, requirements gathering, and more.",
+      "projects": [
+        "Optimizing TFS builds (60% reduction in CI build times)",
+        "Converting static folders of dependency binaries into packages on a new internal NuGet feed",
+        "Leverage DbUp alongside our schema source control for tracking production data fixes",
+        "Implementing an internal wiki for developer documentation and reworking existing ad-hoc folders of docs into the wiki"
+      ],
+      "techs": [
+        "C#",
+        "SQL"
+      ]
+    },
+    {
+      "name": "ziemek",
+      "title": "Ziemek Dental Laboratories",
+      "start": "July 2018",
+      "end": "Present",
+      "description": "As a business that works closely with dentists and their patients to provide quality dental solutions, the teams at Ziemek Dental Labs use an expansive arsenal of CAD/CAM technology alongside digital light processing printers in an increasingly digital manufacturing environment. I have been working with their administrative team to improve their workflows and help manage the systems that they use on a daily basis.",
+      "projects": [
+        "Development of a regulation-compliant AWS S3 data archival and management solution for patient order files",
+        "Creation of internal tools for automation of administrative tasks",
+        "Desktop support for workstation, scanning, and printing hardware"
+      ],
+      "techs": [
+        "Amazon Web Services (S3)",
+        "PowerShell",
+        "Go"
+      ]
+    }
+  ]
+}

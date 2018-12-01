@@ -2,11 +2,11 @@ $(document).ready(function () {
   var $exp = "https://draevin-new.netlify.com/js/json/experience.json";
   $.getJSON($exp)
     .done(function (data) {
-      $.each(data.items, function (i, item) {
-        var $slide = $(document.createElement("<div>")).attr("id", item.name);
+      $.each(data.exps, function (i, exp) {
+        var $slide = $(document.createElement("<div>")).attr("id", exp.name);
         $slide.classList.add("slide", "purple-dark", "vert-center-col", "card-col", "shadow-def");
         var $title = $(document.createElement("<h4>"));
-        var $titleText = $(document.createTextNode(item.title));
+        var $titleText = $(document.createTextNode(exp.title));
         $title.appendChild($titleText);
         $slide.appendChild($title);
         $("#experience").appendChild($slide);
