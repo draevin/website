@@ -32,7 +32,7 @@ $(document).ready(function () {
         var $projAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn");
         var $projPanel = $(document.createElement("div")).attr("class", "panel");
         var $projList = $(document.createElement("ul"));
-        each(exp.projects, function (i, proj) {
+        $.each(exp.projects, function (i, proj) {
           var $projItem = $(document.createElement("li"));
           var $projItemText = $(document.createTextNode(proj));
           $projList.append($projItem.append($projItemText));
