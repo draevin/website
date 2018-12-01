@@ -47,7 +47,7 @@ $(document).ready(function () {
         var $headerText = $(document.createTextNode("Experience"))
         $slide.append($header.append($headerText));
 
-        var $rule = $(document.createElement("hr"));
+        var $rule = $(document.createElement("hr")).attr("class", "mini");
         $slide.append($rule);
 
         var $title = $(document.createElement("h4"));

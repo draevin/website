@@ -61,7 +61,13 @@ hr {
   width: 12em;
   text-align: left;
   border-width: 0px;
-  border-top: .5em dotted #155f5f;
+  border-top: 0.5em dotted #155f5f;
+}
+
+hr.mini {
+  margin: 1em 0.8em;
+  width: 8em;
+  border-top: 0.3em dotted #155f5f;
 }
 
 p {
