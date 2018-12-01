@@ -43,7 +43,7 @@ $(document).ready(function () {
           class: "slide purple-dark vert-center-col card-col shadow-def"
         });
 
-        var $header = $(document.createElement("h5"));
+        var $header = $(document.createElement("h4"));
         var $headerText = $(document.createTextNode("Experience"))
         $slide.append($header.append($headerText));
 
