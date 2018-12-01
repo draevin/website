@@ -3,7 +3,7 @@ $(document).ready(function () {
   $.getJSON($exp)
     .done(function (data) {
       $.each(data.items, function (i, item) {
-        var $slide = $(document.createElement("<div>"), { id: item.name })
+        var $slide = $(document.createElement("<div>"), { id: item.name });
         $slide.appendTo("#experience");
       });
     });
