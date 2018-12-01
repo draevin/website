@@ -7,6 +7,33 @@ $(document).ready(function () {
     });
   }
 
+  var accordionClick = function () {
+    $('.accordion-btn').on('click', function (event) {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+
+    $('.accordion .accordion-btn:last-of-type').on('click', function (event) {
+      var panel = this.nextElementSibling;
+      if (this.classList.contains("to-round")) {
+        this.style.borderBottomRightRadius = "1em";
+        this.style.borderBottomLeftRadius = "1em";
+        this.classList.remove("to-round");
+        panel.style.borderBottom = "none";
+      }
+      else {
+        this.style.borderRadius = 0;
+        this.classList.add("to-round");
+        panel.style.borderBottom = "1px solid #66666622";
+      }
+    });
+  }
+
   var $exp = "https://draevin-new.netlify.com/js/json/experience.json";
   $.getJSON($exp)
     .done(function (data) {
@@ -30,6 +57,7 @@ $(document).ready(function () {
 
         var $projAccordion = $(document.createElement("div")).attr("class", "accordion");
         var $projAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn");
+        var $projAccordionBtnText = $(document.createTextNode("Projects"));
         var $projPanel = $(document.createElement("div")).attr("class", "panel");
         var $projList = $(document.createElement("ul"));
         $.each(exp.projects, function (i, proj) {
@@ -37,10 +65,12 @@ $(document).ready(function () {
           var $projItemText = $(document.createTextNode(proj));
           $projList.append($projItem.append($projItemText));
         });
-        $slide.append($projAccordion.append($projAccordionBtn.append($projPanel.append($projList))));
+        $projAccordion.append($projAccordionBtn.append($projAccordionBtnText));
+        $slide.append($projAccordion($projPanel.append($projList)))
 
         $("#experience").append($slide);
       });
       startCarousel();
+      accordionClick();
     });
 }(jQuery));
