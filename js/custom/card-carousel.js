@@ -20,7 +20,7 @@ $(document).ready(function () {
         $title.append($titleText);
         $slide.append($title);
         $("#experience").append($slide);
-        startCarousel();
       });
+      startCarousel();
     });
 }(jQuery));
