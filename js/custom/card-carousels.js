@@ -43,6 +43,13 @@ $(document).ready(function () {
           class: "slide purple-dark vert-center-col card-col shadow-def"
         });
 
+        var $header = $(document.createElement("h5"));
+        var $headerText = $(document.createTextNode("Experience"))
+        $slide.append($header.append($headerText));
+
+        var $rule = $(document.createElement("hr"));
+        $slide.append($rule);
+
         var $title = $(document.createElement("h4"));
         var $titleText = $(document.createTextNode(exp.title));
         $slide.append($title.append($titleText));
@@ -50,9 +57,6 @@ $(document).ready(function () {
         var $dates = $(document.createElement("h5"));
         var $datesText = $(document.createTextNode(exp.start + " - " + exp.end));
         $slide.append($dates.append($datesText));
-
-        // var $rule = $(document.createElement("hr"));
-        // $slide.append($rule);
 
         var $desc = $(document.createElement("p"));
         var $descText = $(document.createTextNode(exp.description));
