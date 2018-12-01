@@ -15,14 +15,15 @@ $(document).ready(function () {
           id: exp.name,
           class: "slide purple-dark vert-center-col card-col shadow-def"
         });
-        var $title = $(document.createElement("h4")
-          .append(
-            $(document.createTextNode(exp.title))
-          )
-        );
-        // var $titleText = $(document.createTextNode(exp.title));
-        // $title.append($titleText);
-        $slide.append($title);
+
+        var $title = $(document.createElement("h4"));
+        var $titleText = $(document.createTextNode(exp.title));
+        $slide.append($title.append($titleText));
+
+        var $dates = $(document.createElement("h5"));
+        var $datesText = $(document.createTextNode(exp.start + " - " + exp.end));
+        $slide.append($dates.append($datesText));
+
         $("#experience").append($slide);
       });
       startCarousel();
