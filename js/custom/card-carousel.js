@@ -66,7 +66,7 @@ $(document).ready(function () {
           $projList.append($projItem.append($projItemText));
         });
         $projAccordion.append($projAccordionBtn.append($projAccordionBtnText));
-        $slide.append($projAccordion($projPanel.append($projList)))
+        $slide.append($projAccordion.append($projPanel.append($projList)))
 
         $("#experience").append($slide);
       });
