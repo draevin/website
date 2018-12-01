@@ -15,9 +15,13 @@ $(document).ready(function () {
           id: exp.name,
           class: "slide purple-dark vert-center-col card-col shadow-def"
         });
-        var $title = $(document.createElement("h4"));
-        var $titleText = $(document.createTextNode(exp.title));
-        $title.append($titleText);
+        var $title = $(document.createElement("h4")
+          .append(
+            $(document.createTextNode(exp.title))
+          )
+        );
+        // var $titleText = $(document.createTextNode(exp.title));
+        // $title.append($titleText);
         $slide.append($title);
         $("#experience").append($slide);
       });
