@@ -50,11 +50,11 @@ $(document).ready(function () {
         var $rule = $(document.createElement("hr")).attr("class", "mini");
         $slide.append($rule);
 
-        var $title = $(document.createElement("h4"));
+        var $title = $(document.createElement("h5"));
         var $titleText = $(document.createTextNode(exp.title));
         $slide.append($title.append($titleText));
 
-        var $dates = $(document.createElement("h5"));
+        var $dates = $(document.createElement("h6"));
         var $datesText = $(document.createTextNode(exp.start + " - " + exp.end));
         $slide.append($dates.append($datesText));
 
