@@ -15,10 +15,9 @@ $(document).ready(function () {
           $title.append($titleText);
           $slide.append($title);
           $("#experience").append($slide);
+          startCarousel();
         });
       });
-
-    return r;
   }
 
   var startCarousel = function () {
@@ -28,5 +27,5 @@ $(document).ready(function () {
     });
   }
 
-  fillCards().done(startCarousel());
+  // fillCards().done(startCarousel());
 }(jQuery));
