@@ -55,7 +55,8 @@ $(document).ready(function () {
         var $descText = $(document.createTextNode(exp.description));
         $slide.append($desc.append($descText));
 
-        var $projAccordion = $(document.createElement("div")).attr("class", "accordion");
+        var $accordion = $(document.createElement("div")).attr("class", "accordion");
+
         var $projAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn");
         var $projAccordionBtnText = $(document.createTextNode("Projects"));
         var $projPanel = $(document.createElement("div")).attr("class", "panel");
@@ -65,10 +66,9 @@ $(document).ready(function () {
           var $projItemText = $(document.createTextNode(proj));
           $projList.append($projItem.append($projItemText));
         });
-        $projAccordion.append($projAccordionBtn.append($projAccordionBtnText));
-        $slide.append($projAccordion.append($projPanel.append($projList)))
+        $accordion.append($projAccordionBtn.append($projAccordionBtnText));
+        $accordion.append($projPanel.append($projList));
 
-        var $techAccordion = $(document.createElement("div")).attr("class", "accordion");
         var $techAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn");
         var $techAccordionBtnText = $(document.createTextNode("Primary Technologies"));
         var $techPanel = $(document.createElement("div")).attr("class", "panel");
@@ -78,8 +78,10 @@ $(document).ready(function () {
           var $techItemText = $(document.createTextNode(tech));
           $techList.append($techItem.append($techItemText));
         });
-        $techAccordion.append($techAccordionBtn.append($techAccordionBtnText));
-        $slide.append($techAccordion.append($techPanel.append($techList)))
+        $accordion.append($techAccordionBtn.append($techAccordionBtnText));
+        $accordion.append($techPanel.append($techList));
+
+        $slide.append($accordion);
 
         $("#experience").append($slide);
       });
