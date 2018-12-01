@@ -3,8 +3,13 @@ $(document).ready(function () {
   $.getJSON($exp)
     .done(function (data) {
       $.each(data.items, function (i, item) {
-        var $slide = $(document.createElement("<div>"), { id: item.name });
-        $slide.appendTo("#experience");
+        var $slide = $(document.createElement("<div>")).attr("id", item.name);
+        $slide.classList.add("slide", "purple-dark", "vert-center-col", "card-col", "shadow-def");
+        var $title = $(document.createElement("<h4>"));
+        var $titleText = $(document.createTextNode(item.title));
+        $title.appendChild($titleText);
+        $slide.appendChild($title);
+        $("#experience").appendChild($slide);
       });
     });
 
