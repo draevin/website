@@ -3,6 +3,7 @@
     {
       "name": "dshs",
       "title": "Washington Dept. of Social and Health Services",
+      "position": "IT Specialist -- .NET Development",
       "start": "June 2017",
       "end": "Present",
       "description": "My primary responsibilities at this job upon hiring were directly related to the development and maintenance of features within the Automatic Client Tracker (ACT), an application used state-wide by field staff in the Juvenile Rehabilitation system. The app allows staff to manage the youth's background information, case paperwork, and treatment needs and progress, as well as information and timely reminders for the staff related to their responsibilities within the system. Due to our small team size, my responsibilities also included requirements gathering, test development, and more.",
@@ -20,6 +21,7 @@
     {
       "name": "ziemek",
       "title": "Ziemek Dental Laboratories",
+      "position": "Technical Operations Engineer",
       "start": "July 2018",
       "end": "Present",
       "description": "As a business that works closely with dentists and their patients to provide quality dental solutions, the teams at Ziemek Dental Labs use an expansive arsenal of CAD/CAM technology alongside digital light processing printers in an increasingly digital manufacturing environment. I have been working with their administrative team to improve their workflows and help manage the systems that they use on a daily basis.",
@@ -35,6 +37,23 @@
         "PowerShell",
         "SQL",
         "Power BI"
+      ]
+    },
+    {
+      "name": "b4k",
+      "title": "Bri",
+      "start": "",
+      "end": "",
+      "description": "",
+      "projects": [
+        "",
+        "",
+        ""
+      ],
+      "techs": [
+        "",
+        "",
+        ""
       ]
     }
   ]

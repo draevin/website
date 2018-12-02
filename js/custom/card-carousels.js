@@ -54,6 +54,10 @@ $(document).ready(function () {
         var $titleText = $(document.createTextNode(exp.title));
         $slide.append($title.append($titleText));
 
+        var $position = $(document.createElement("h6"));
+        var $positionText = $(document.createTextNode(exp.position));
+        $slide.append($position.append($positionText));
+
         var $dates = $(document.createElement("h6"));
         var $datesText = $(document.createTextNode(exp.start + " - " + exp.end));
         $slide.append($dates.append($datesText));
