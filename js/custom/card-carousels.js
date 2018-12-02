@@ -34,7 +34,7 @@ $(document).ready(function () {
     });
   }
 
-  var $exp = "https://draevin.netlify.com/js/json/experience.json";
+  var $exp = "/js/json/experience.json";
   $.getJSON($exp)
     .done(function (data) {
       $.each(data.exps, function (i, exp) {
