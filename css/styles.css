@@ -240,6 +240,13 @@ img.center {
   margin: auto auto; 
 }
 
+img.thumbnail {
+  max-width: 100%;
+  filter: grayscale(70%);
+  margin-top: 16px;
+  border-radius: 12px;
+}
+
 .intro-fill {
   padding-top: 2vh;
   min-height: 90vh;
