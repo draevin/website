@@ -1,1 +1,2 @@
-Access-Control-Allow-Origin: *
+/js/json/*
+  Access-Control-Allow-Origin: *
