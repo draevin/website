@@ -89,7 +89,7 @@ $(document).ready(function () {
           var $skillsList = $(document.createElement("ul"));
           $.each(exp.skills, function (i, skill) {
             var $skillItem = $(document.createElement("li"));
-            var $skillItemText = $(document.createTextNode(tech));
+            var $skillItemText = $(document.createTextNode(skill));
             $skillsList.append($skillItem.append($skillItemText));
           });
           $accordion.append($skillsAccordionBtn.append($skillsAccordionBtnText));
