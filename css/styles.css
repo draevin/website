@@ -182,7 +182,7 @@ li {
 }
 .card-col {
   background-color: #fffefb;
-  border-radius: 16px;
+  border-radius: 12px;
   margin: 0 16px;
   padding: 32px;
 }
@@ -336,7 +336,7 @@ img.center {
 }
 
 .hello-rw h5:nth-child(odd) {
-  text-indent: 1rem;
+  text-indent: 1.8rem;
 }
 
 .hello-rw h5:nth-child(even) {
