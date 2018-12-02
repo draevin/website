@@ -156,12 +156,12 @@ $(document).ready(function () {
         if (data.items.length > 0) {
           var $wrtRow = $(document.createElement("div")).attr({
             id: "wrt-row",
-            class: "row vert-fill-half justify-content-center"
+            class: "row vert-fill-fourth justify-content-center"
           });
 
           var $wrtCol = $(document.createElement("div")).attr({
             id: "wrt-col",
-            class: "col-sm-10"
+            class: "col-sm-8"
           })
 
           var $wrtCarousel = $(document.createElement("div")).attr({
@@ -196,7 +196,7 @@ $(document).ready(function () {
           $($wrtCarousel).append($card);
         })
 
-        $("#writing").append($wrtRow.append($wrtCol).append($wrtCarousel));
+        $("#writing").append($wrtRow.append($wrtCol.append($wrtCarousel)));
 
         accordionClick();
         startMediumCarousel();
