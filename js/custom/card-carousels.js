@@ -68,29 +68,48 @@ $(document).ready(function () {
 
         var $accordion = $(document.createElement("div")).attr("class", "accordion");
 
-        var $projAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn");
-        var $projAccordionBtnText = $(document.createTextNode("Projects"));
-        var $projPanel = $(document.createElement("div")).attr("class", "panel");
-        var $projList = $(document.createElement("ul"));
-        $.each(exp.projects, function (i, proj) {
-          var $projItem = $(document.createElement("li"));
-          var $projItemText = $(document.createTextNode(proj));
-          $projList.append($projItem.append($projItemText));
-        });
-        $accordion.append($projAccordionBtn.append($projAccordionBtnText));
-        $accordion.append($projPanel.append($projList));
+        if (exp.projects.length > 0) {
+          var $projAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn");
+          var $projAccordionBtnText = $(document.createTextNode("Projects"));
+          var $projPanel = $(document.createElement("div")).attr("class", "panel");
+          var $projList = $(document.createElement("ul"));
+          $.each(exp.projects, function (i, proj) {
+            var $projItem = $(document.createElement("li"));
+            var $projItemText = $(document.createTextNode(proj));
+            $projList.append($projItem.append($projItemText));
+          });
+          $accordion.append($projAccordionBtn.append($projAccordionBtnText));
+          $accordion.append($projPanel.append($projList));
+        }
 
-        var $techAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn");
-        var $techAccordionBtnText = $(document.createTextNode("Primary Technologies"));
-        var $techPanel = $(document.createElement("div")).attr("class", "panel");
-        var $techList = $(document.createElement("ul"));
-        $.each(exp.techs, function (i, tech) {
-          var $techItem = $(document.createElement("li"));
-          var $techItemText = $(document.createTextNode(tech));
-          $techList.append($techItem.append($techItemText));
-        });
-        $accordion.append($techAccordionBtn.append($techAccordionBtnText));
-        $accordion.append($techPanel.append($techList));
+        if (exp.skills.length > 0) {
+          var $skillsAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn");
+          var $skillsAccordionBtnText = $(document.createTextNode("Skills"));
+          var $skillsPanel = $(document.createElement("div")).attr("class", "panel");
+          var $skillsList = $(document.createElement("ul"));
+          $.each(exp.skills, function (i, skill) {
+            var $skillItem = $(document.createElement("li"));
+            var $skillItemText = $(document.createTextNode(tech));
+            $skillsList.append($skillItem.append($skillItemText));
+          });
+          $accordion.append($skillsAccordionBtn.append($skillsAccordionBtnText));
+          $accordion.append($skillsPanel.append($skillsList));
+        }
+
+        if (exp.techs.length > 0) {
+          var $techAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn");
+          var $techAccordionBtnText = $(document.createTextNode("Primary Technologies"));
+          var $techPanel = $(document.createElement("div")).attr("class", "panel");
+          var $techList = $(document.createElement("ul"));
+          $.each(exp.techs, function (i, tech) {
+            var $techItem = $(document.createElement("li"));
+            var $techItemText = $(document.createTextNode(tech));
+            $techList.append($techItem.append($techItemText));
+          });
+          $accordion.append($techAccordionBtn.append($techAccordionBtnText));
+          $accordion.append($techPanel.append($techList));
+        }
+
 
         $slide.append($accordion);
 

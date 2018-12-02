@@ -13,6 +13,11 @@
         "Leverage DbUp alongside our schema source control for tracking production data fixes",
         "Implementing an internal wiki for developer documentation and reworking existing ad-hoc folders of docs into the wiki"
       ],
+      "skills": [
+        "Cross-team coordination",
+        "Legal document interpretation",
+        "Identifying and rectifying SDLC process inefficiencies"
+      ],
       "techs": [
         "C#",
         "SQL"
@@ -31,6 +36,11 @@
         "Desktop support for workstation, scanning, and printing hardware",
         "Creating custom reports for executive teams to improve workflow visibility and decision making processes"
       ],
+      "skills": [
+        "Interdisciplinary communication",
+        "Workflow mapping",
+        "End user troubleshooting assistance"
+      ],
       "techs": [
         "Amazon Web Services (S3)",
         "Go",
@@ -41,20 +51,22 @@
     },
     {
       "name": "b4k",
-      "title": "Bri",
-      "start": "",
-      "end": "",
-      "description": "",
+      "title": "Bricks 4 Kidz",
+      "start": "Sept. 2015",
+      "end": "June 2017",
+      "description": "Bricks 4 Kidz provides STEM enrichment courses, with robotics programs using LEGO NXT and WeDo products to provide an easy entry point for kids into the world of engineering. I worked in their after school and Summer programs in the South Sound region as an instructor in both a solo capacity and in co-instructed sessions.",
       "projects": [
-        "",
-        "",
-        ""
+        "Supervising and leading classes up to 16 students, ages 5-14",
+        "Teaching STEM concepts using Lego products",
+        "Guiding students in design, building, programming, and troubleshooting processes",
+        "Serving as coach for the Faith Lutheran robotics in preparation for the LEST competition"
       ],
-      "techs": [
-        "",
-        "",
-        ""
-      ]
+      "skills": [
+        "Presentation and instruction",
+        "Group management",
+        "Conflict resolution"
+      ],
+      "techs": []
     }
   ]
 }
