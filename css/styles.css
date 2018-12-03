@@ -86,7 +86,7 @@ ul {
 }
 
 li {
-  font-size: .8rem;
+  font-size: .9rem;
   margin-bottom: .4em;
   margin-left: .4em;
 }
@@ -159,7 +159,7 @@ li {
 }
 
 .panel > p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-top: 1rem;
   line-height: 1.5;
 }
@@ -552,6 +552,14 @@ img.thumbnail {
 
   body {
     font-size: 0.9rem;
+  }
+
+  li {
+    font-size: 0.8rem;
+  }
+
+  .panel > p {
+    font-size: 0.8rem;
   }
 }
 
