@@ -48,7 +48,7 @@ $(document).ready(function () {
         if (data.exps.length > 0) {
           var $row = $(document.createElement("div")).attr({
             id: "exp-row",
-            class: "row vert-fill-half justify-content-center"
+            class: "row vert-fill-fourth justify-content-center"
           });
 
           var $col = $(document.createElement("div")).attr({
