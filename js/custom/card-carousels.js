@@ -137,7 +137,7 @@ $(document).ready(function () {
                   .append($(document.createTextNode(tech)));
                 $techList.append($techItem);
               });
-              $accordion.append($techAccordionBtn.append($techAccordionBtnText));
+              $accordion.append($techAccordionBtn);
               $accordion.append($techPanel.append($techList));
             }
 
