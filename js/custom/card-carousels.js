@@ -92,8 +92,8 @@ $(document).ready(function () {
               var $descPanel = $(document.createElement("div")).attr("class", "panel");
               var $desc = $(document.createElement("p"))
                 .append($(document.createTextNode(exp.description)));
-              $slide.append($descAccordionBtn);
-              $slide.append($descPanel.append($desc));
+              $accordion.append($descAccordionBtn);
+              $accordion.append($descPanel.append($desc));
             }
 
 
