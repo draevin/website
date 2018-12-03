@@ -67,68 +67,75 @@ $(document).ready(function () {
               class: "slide purple-dark vert-center-col card-col shadow-def"
             });
 
-            var $header = $(document.createElement("h4"));
-            var $headerText = $(document.createTextNode("Experience"))
-            $slide.append($header.append($headerText));
+            var $header = $(document.createElement("h4"))
+              .append($(document.createTextNode("Experience")));
+            $slide.append($header);
 
             var $rule = $(document.createElement("hr")).attr("class", "mini");
             $slide.append($rule);
 
-            var $title = $(document.createElement("h5"));
-            var $titleText = $(document.createTextNode(exp.title));
-            $slide.append($title.append($titleText));
+            var $title = $(document.createElement("h5"))
+              .append($(document.createTextNode(exp.title)));
+            $slide.append($title);
 
-            var $position = $(document.createElement("h6"));
-            var $positionText = $(document.createTextNode(exp.position));
-            $slide.append($position.append($positionText));
+            var $position = $(document.createElement("h6"))
+              .append($(document.createTextNode(exp.position)));
+            $slide.append($position);
 
-            var $dates = $(document.createElement("h6"));
-            var $datesText = $(document.createTextNode(exp.start + " - " + exp.end));
-            $slide.append($dates.append($datesText));
+            var $dates = $(document.createElement("h6"))
+              .append($(document.createTextNode(exp.start + " - " + exp.end)));
+            $slide.append($dates);
 
-            var $desc = $(document.createElement("p"));
-            var $descText = $(document.createTextNode(exp.description));
-            $slide.append($desc.append($descText));
+            if (exp.desc.length > 0) {
+              var $descAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn")
+                .append($(document.createTextNode("Description")));
+              var $descPanel = $(document.createElement("div")).attr("class", "panel");
+              var $desc = $(document.createElement("p"))
+                .append($(document.createTextNode(exp.description)));
+              $slide.append($descAccordionBtn);
+              $slide.append($descPanel.append($desc));
+            }
+
 
             var $accordion = $(document.createElement("div")).attr("class", "accordion");
 
             if (exp.projects.length > 0) {
-              var $projAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn");
-              var $projAccordionBtnText = $(document.createTextNode("Projects"));
+              var $projAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn")
+                .append($(document.createTextNode("Projects")));
               var $projPanel = $(document.createElement("div")).attr("class", "panel");
               var $projList = $(document.createElement("ul"));
               $.each(exp.projects, function (i, proj) {
-                var $projItem = $(document.createElement("li"));
-                var $projItemText = $(document.createTextNode(proj));
-                $projList.append($projItem.append($projItemText));
+                var $projItem = $(document.createElement("li"))
+                  .append($(document.createTextNode(proj)));
+                $projList.append($projItem);
               });
-              $accordion.append($projAccordionBtn.append($projAccordionBtnText));
+              $accordion.append($projAccordionBtn);
               $accordion.append($projPanel.append($projList));
             }
 
             if (exp.skills.length > 0) {
-              var $skillsAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn");
-              var $skillsAccordionBtnText = $(document.createTextNode("Skills"));
+              var $skillsAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn")
+                .append($(document.createTextNode("Skills")));
               var $skillsPanel = $(document.createElement("div")).attr("class", "panel");
               var $skillsList = $(document.createElement("ul"));
               $.each(exp.skills, function (i, skill) {
-                var $skillItem = $(document.createElement("li"));
-                var $skillItemText = $(document.createTextNode(skill));
-                $skillsList.append($skillItem.append($skillItemText));
+                var $skillItem = $(document.createElement("li"))
+                  .append($(document.createTextNode(skill)));
+                $skillsList.append($skillItem);
               });
-              $accordion.append($skillsAccordionBtn.append($skillsAccordionBtnText));
+              $accordion.append($skillsAccordionBtn);
               $accordion.append($skillsPanel.append($skillsList));
             }
 
             if (exp.techs.length > 0) {
-              var $techAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn");
-              var $techAccordionBtnText = $(document.createTextNode("Primary Technologies"));
+              var $techAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn")
+                .append($(document.createTextNode("Primary Technologies")));
               var $techPanel = $(document.createElement("div")).attr("class", "panel");
               var $techList = $(document.createElement("ul"));
               $.each(exp.techs, function (i, tech) {
-                var $techItem = $(document.createElement("li"));
-                var $techItemText = $(document.createTextNode(tech));
-                $techList.append($techItem.append($techItemText));
+                var $techItem = $(document.createElement("li"))
+                  .append($(document.createTextNode(tech)));
+                $techList.append($techItem);
               });
               $accordion.append($techAccordionBtn.append($techAccordionBtnText));
               $accordion.append($techPanel.append($techList));

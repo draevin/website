@@ -158,6 +158,10 @@ li {
   transition: max-height 0.2s ease-out;
 }
 
+.panel > p {
+  font-size: 0.8rem;
+}
+
 .accordion .panel:last-of-type {
   border-radius: 0 0 16px 16px;
   border-bottom: none;
