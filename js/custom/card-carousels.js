@@ -86,7 +86,7 @@ $(document).ready(function () {
               .append($(document.createTextNode(exp.start + " - " + exp.end)));
             $slide.append($dates);
 
-            if (exp.desc.length > 0) {
+            if (exp.description.length > 0) {
               var $descAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn")
                 .append($(document.createTextNode("Description")));
               var $descPanel = $(document.createElement("div")).attr("class", "panel");
