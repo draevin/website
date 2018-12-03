@@ -160,7 +160,8 @@ li {
 
 .panel > p {
   font-size: 0.8rem;
-  line-height: 1.4;
+  margin-top: 1rem;
+  line-height: 1.5;
 }
 
 .accordion .panel:last-of-type {
