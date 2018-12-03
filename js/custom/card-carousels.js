@@ -86,6 +86,8 @@ $(document).ready(function () {
               .append($(document.createTextNode(exp.start + " - " + exp.end)));
             $slide.append($dates);
 
+            var $accordion = $(document.createElement("div")).attr("class", "accordion");
+
             if (exp.description.length > 0) {
               var $descAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn")
                 .append($(document.createTextNode("Description")));
@@ -95,9 +97,6 @@ $(document).ready(function () {
               $accordion.append($descAccordionBtn);
               $accordion.append($descPanel.append($desc));
             }
-
-
-            var $accordion = $(document.createElement("div")).attr("class", "accordion");
 
             if (exp.projects.length > 0) {
               var $projAccordionBtn = $(document.createElement("button")).attr("class", "accordion-btn")
