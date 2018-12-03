@@ -179,21 +179,12 @@ li {
 }
 
 .slick-prev:before {
-<<<<<<< HEAD
   margin-left: 16px;
 }
 
 .slick-next:before {
   margin-left: -16px;
   margin-right: 16px;
-=======
-  margin-left: 13px;
-}
-
-.slick-next:before {
-  margin-left: -13px;
-  margin-right: 13px;
->>>>>>> Merge dev into master, css adjustments
 }
 .card-col {
   background-color: #fffefb;
