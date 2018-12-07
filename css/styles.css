@@ -183,10 +183,6 @@ li:last-of-type {
   margin-right: 8px;
 }
 
-.slide {
-  margin-bottom: 32px;
-}
-
 .slick-prev:before, .slick-next:before {
   font-size: 16px;
   color: #fdfaf1a2;
