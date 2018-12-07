@@ -204,7 +204,6 @@ $(document).ready(function () {
 
         $("#writing").append($wrtRow.append($wrtCol.append($wrtCarousel)));
 
-        accordionClick();
         startMediumCarousel();
       })
   }
