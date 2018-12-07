@@ -64,7 +64,7 @@ $(document).ready(function () {
           $.each(data.exps, function (i, exp) {
             var $slide = $(document.createElement("div")).attr({
               id: exp.name,
-              class: "slide purple-dark vert-center-col card-col shadow-def"
+              class: "purple-dark vert-center-col card-col shadow-def"
             });
 
             var $header = $(document.createElement("h4"))
@@ -180,7 +180,7 @@ $(document).ready(function () {
             return false;
           }
           var $card = $(document.createElement("div")).attr({
-            class: "slide purple-dark vert-center-col card-col shadow-def"
+            class: "purple-dark vert-center-col card-col shadow-def"
           });
 
           var $header = $(document.createElement("h4")).append($(document.createTextNode("Recent on Medium:")));
