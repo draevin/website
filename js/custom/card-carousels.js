@@ -176,7 +176,7 @@ $(document).ready(function () {
           })
         }
         $.each(data.items, function (i, story) {
-          if (i > 0) {
+          if (i > 2) {
             return false;
           }
           var $card = $(document.createElement("div")).attr({
