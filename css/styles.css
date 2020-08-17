@@ -69,6 +69,10 @@ footer {
   opacity: 60%;
 }
 
+footer p {
+  margin-bottom: .5em;
+}
+
 h1,
 h2,
 h3,
