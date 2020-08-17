@@ -135,7 +135,9 @@ main:first-child {
 }
 
 header {
-  max-width: 80%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
 }
 
@@ -283,11 +285,11 @@ mark {
 .down-bar {
   align-items: center;
   display: flex;
-  min-height: 20vh;
   justify-content: center;
 }
 
 .down-bar a {
+  margin: 1rem 0;
   animation: text-fade-in 1.5s ease-in 2.5s forwards;
   color: var(--impact-alt);
   font-size: 3em;
@@ -302,16 +304,17 @@ mark {
 }
 
 .intro {
+  flex-grow: 1;
   color: var(--main-text-alt);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 70% 0 30%;
+  align-items: center;
+  margin-top: 2rem;
   font-weight: 600;
-  min-height: 95vh;
 }
 
 .intro>div {
   width: 100%;
-  margin-top: 8vh;
 }
 
 .intro h1 {
@@ -348,27 +351,6 @@ mark {
   z-index: -1;
   transform: skewY(-4deg);
   transform-origin: top left;
-}
-
-/*****************/
-/* Class Queries */
-/*****************/
-
-@media (max-width: 450px) {
-  .down-bar {
-    min-height: 8vh;
-    margin-top: 4vh;
-  }
-}
-
-@media (min-width: 768px) {
-  .down-bar {
-    grid-column: span 3;
-  }
-
-  .intro-block {
-    width: 80%;
-  }
 }
 
 /**************/
