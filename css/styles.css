@@ -75,6 +75,7 @@ footer {
 footer p {
   font-style: italic;
   margin-bottom: .2rem;
+  margin: auto;
 }
 
 h1,
@@ -133,6 +134,11 @@ main:first-child {
   padding-top: 5vh;
 }
 
+header {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 header hr,
 p.blurb {
   opacity: 0;
@@ -144,7 +150,7 @@ hr {
 }
 
 main {
-  padding-top: 5vh;
+  padding-top: 8vh;
   flex: 1;
 }
 
@@ -180,6 +186,12 @@ mark {
 /* Element Queries */
 /*******************/
 
+@media (max-width: 450px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
 @media (min-width: 768px) {
 
   body {
@@ -191,13 +203,11 @@ mark {
   }
 
   header {
-    max-width: 40vw;
+    grid-column: 2 / span 1 ;
   }
 
-  header,
   footer {
     grid-column: span 3;
-    margin: auto;
   }
 
   main {
@@ -255,6 +265,10 @@ mark {
 /***********/
 /* Classes */
 /***********/
+
+.blurb {
+  line-height: 1.6em;
+}
 
 .blurb mark {
   animation: mark-fade-away 2s ease-in 8s forwards;
@@ -315,7 +329,7 @@ mark {
 }
 
 .intro-block {
-  min-height: 50vh;
+  min-height: 40vh;
 }
 
 .shadow {
@@ -341,28 +355,15 @@ mark {
 /*****************/
 
 @media (max-width: 450px) {
-  body {
-    font-size: 1rem;
-  }
-
-  h1,
-  .fake-h1 {
-    font-size: 2rem;
-  }
-
-  h2{
-    font-size: 1.75rem;
+  .down-bar {
+    min-height: 8vh;
+    margin-top: 4vh;
   }
 }
 
 @media (min-width: 768px) {
   .down-bar {
     grid-column: span 3;
-  }
-
-  .intro {
-    grid-column: span 3;
-    width: 60%;
   }
 
   .intro-block {
