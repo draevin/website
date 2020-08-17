@@ -274,7 +274,7 @@ mark {
 .down-bar a {
   animation: text-fade-in 1.5s ease-in 2.5s forwards;
   color: var(--impact-alt);
-  font-size: 3rem;
+  font-size: 3em;
   justify-content: center;
   opacity: 0;
 }
