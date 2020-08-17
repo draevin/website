@@ -71,7 +71,8 @@ footer {
 }
 
 footer p {
-  margin-bottom: .5em;
+  font-style: italic;
+  margin-bottom: .2rem;
 }
 
 h1,
@@ -313,10 +314,6 @@ mark {
 
 .intro-block {
   min-height: 50vh;
-}
-
-.italic {
-  font-style: italic;
 }
 
 .shadow {
