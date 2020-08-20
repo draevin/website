@@ -96,8 +96,6 @@ h1 {
 
 h2 {
   font-size: 1.66em;
-  margin-bottom: 1.66rem;
-  text-align: center;
 }
 
 h3 {
@@ -145,23 +143,37 @@ header hr,
 p.blurb {
   opacity: 0;
   animation: text-fade-in 1.5s ease-in 2.5s forwards;
+  border-color: var(--main-text)
 }
 
 hr {
-  border-color: var(--main-text)
+  border-color: var(--impact);
+  grid-column: span 3;
+  width: 100%;
+}
+
+ul.hanging {
+  padding-left: 2em;
+  text-indent: -1em;
+}
+
+ul.hanging li {
+  padding-left: 2em;
+  text-indent: -1em;
+  margin: .6rem 0;
+}
+
+ul.hanging li a {
+  font-style: oblique;
+}
+
+ul.hanging li ul {
+  margin-top: -.3rem;
 }
 
 main {
   padding-top: 8vh;
   flex: 1;
-}
-
-main p {
-  margin-bottom: 1.5rem
-}
-
-main p.short-center {
-  padding: 0 5vw;
 }
 
 main img {
@@ -176,12 +188,38 @@ main img.center {
   margin: 1.5rem auto;
 }
 
+main p {
+  margin-bottom: 1.5rem
+}
+
+main p.short-center {
+  padding: 0 5vw;
+}
+
+main section {
+  grid-column: span 3;
+}
+
+
 mark {
   background-color: var(--impact);
   border-radius: .2em;
   color: var(--base-intro);
   padding: .1em .2em;
   white-space: nowrap;
+}
+
+nav {
+  margin: .5rem auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+strong {
+  font-style: oblique;
+  font-weight: 700;
 }
 
 /*******************/
@@ -277,9 +315,19 @@ mark {
   padding: inherit 1px;
 }
 
+.center {
+  text-align: center;
+}
+
 .contacts {
   margin: auto;
   width: fit-content;
+}
+
+.current {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: .3em;
 }
 
 .down-bar {
@@ -301,6 +349,10 @@ mark {
   font-size: 2em;
   font-family: 'Kanit', sans-serif;
   font-weight: 500;
+}
+
+.foss-note {
+  font-size: .6em;
 }
 
 .intro {
@@ -333,6 +385,10 @@ mark {
 
 .intro-block {
   min-height: 40vh;
+}
+
+.oblq {
+  font-style: oblique;
 }
 
 .shadow {
