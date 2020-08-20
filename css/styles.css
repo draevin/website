@@ -38,11 +38,11 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-size: calc(.85em + 1vw);
-  background-color: var(--base);
   scroll-behavior: smooth;
 }
 
 body {
+  background-color: var(--base);
   color: var(--main-text);
   font-family: 'Fira Code', monospace;
   font-size: .8em;
