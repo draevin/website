@@ -81,6 +81,12 @@ footer {
   opacity: 60%;
 }
 
+footer i {
+  font-size: .75em;
+  margin: -.2em .5em 0;
+  vertical-align: middle;
+}
+
 footer p {
   font-style: italic;
   margin-bottom: .2rem;
@@ -123,22 +129,9 @@ h6 {
   font-size: .33em;
 }
 
-i {
-  color: var(--impact-alt);
-}
-
 h2 i {
   color: var(--impact);
   font-size: .7em;
-}
-
-li {
-  font-size: .9em;
-}
-
-main:first-child {
-  margin-top: 5vh;
-  padding-top: 5vh;
 }
 
 header {
@@ -161,23 +154,13 @@ hr {
   width: 100%;
 }
 
-ul.hanging {
-  padding-left: 2em;
-  text-indent: -1em;
+li {
+  font-size: .9em;
 }
 
-ul.hanging li {
-  padding-left: 2em;
-  text-indent: -1em;
-  margin: .6rem 0;
-}
-
-ul.hanging li a {
-  font-style: oblique;
-}
-
-ul.hanging li ul {
-  margin-top: -.3rem;
+main:first-child {
+  margin-top: 5vh;
+  padding-top: 5vh;
 }
 
 main {
@@ -229,6 +212,25 @@ section {
 strong {
   font-style: oblique;
   font-weight: 700;
+}
+
+ul.hanging {
+  padding-left: 2em;
+  text-indent: -1em;
+}
+
+ul.hanging li {
+  padding-left: 2em;
+  text-indent: -1em;
+  margin: .6rem 0;
+}
+
+ul.hanging li a {
+  font-style: oblique;
+}
+
+ul.hanging li ul {
+  margin-top: -.3rem;
 }
 
 /*******************/
@@ -363,6 +365,10 @@ strong {
 .contacts {
   margin: 1rem auto;
   width: fit-content;
+}
+
+.contacts i {
+  color: var(--impact-alt);
 }
 
 .current {
