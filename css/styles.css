@@ -75,7 +75,7 @@ a:hover {
 
 footer {
   min-height: 15vh;
-  padding: 8vh 0 2vh;
+  padding: 8vh 2em 2vh;
   text-align: center;
   font-size: .6em;
   opacity: 60%;
@@ -243,7 +243,7 @@ ul.hanging li ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 
   body {
     display: grid;
@@ -269,10 +269,6 @@ ul.hanging li ul {
     grid-column: 2;
     grid-row: 2;
     grid-template-columns: 2fr 3fr 2fr;
-  }
-
-  main div.contacts {
-    grid-column: span 3;
   }
 
   main p {
@@ -363,8 +359,44 @@ ul.hanging li ul {
 }
 
 .contacts {
+  grid-column: span 3;
   margin: 1rem auto;
-  width: fit-content;
+}
+
+.contacts div {
+  margin: 1em auto;
+}
+
+.contacts i.fa-map-marked-alt {
+  color: var(--impact);
+  display: inline-block;
+  margin-top: -.2em;
+}
+
+.contacts i::after {
+  content: '-';
+  display: inline-block;
+  font-size: 1.5em;
+  margin: -.3em .5em;
+  vertical-align: top;
+}
+
+.contacts li {
+  display: block;
+  width: auto
+}
+
+.contacts li i {
+  color: var(--impact-alt);
+}
+
+.contacts li i::after {
+  color: var(--main-text);
+}
+
+/* Fix size inconsistency with DEV icon */
+.contacts li i.fa-dev::after {
+  margin: -.3em .5em 0 .6em
 }
 
 .contacts i {
@@ -460,7 +492,13 @@ ul.hanging li ul {
 /* Class Queries */
 /*******************/
 
-@media (min-width: 768px) {
+@media (min-width: 400px) {
+  .contacts div {
+    max-width: 75vw;
+  }
+}
+
+@media (min-width: 600px) {
   .backdrop {
     background: radial-gradient(var(--impact-rgb) 60%, var(--invisible-rgb) 60%);
   }
